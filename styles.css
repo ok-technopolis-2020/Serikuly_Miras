@@ -9,6 +9,7 @@
     --filter_radio-button-border-color: #EBDFDF;
     --hover-background-color: #fafafa;
     --checked-icon-color: #5DC2AF;
+    --focus-border-color: #cccccc;
 }
 
 * {
@@ -102,7 +103,7 @@ button {
 .controls__select-all-button {
     height: 64px;
     width: 56px;
-    background-image: url(../img/select-all.svg);
+    background-image: url(/img/select-all.svg);
     background-repeat: no-repeat;
     background-position: 15px 26px;
     background-color: transparent;
@@ -167,10 +168,14 @@ button {
     border-radius: 50%;
 }
 
+.tasks-item__status:focus + .task-item__status-icon {
+    border-color: var(--focus-border-color);
+}
+
 .tasks-item__status:checked + .task-item__status-icon {
     background-position: 6px 8px;
     background-repeat: no-repeat;
-    background-image: url(../img/checked.svg);
+    background-image: url(/img/checked.svg);
     border-color: var(--checked-icon-color);
 }
 
@@ -190,9 +195,6 @@ button {
     width: 36px;
     height: 36px;
     box-sizing: border-box;
-    border: 1px var(--border-color) solid;
-    border-radius: 50%;
-    background-image: url(../img/circle.svg);
     background-color: transparent;
 }
 
@@ -214,11 +216,12 @@ button {
     height: 36px;
     margin: -9999px 4px 0 12px;
     text-indent: -9999px;
-    background-image: url(../img/cross.svg);
+    background-image: url(/img/cross.svg);
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
+.task-item__delete:focus,
 .tasks-item__view:hover .task-item__delete {
     margin-top: 0;
 }
@@ -244,8 +247,13 @@ button {
     margin-left: -30px;
 }
 
-.task-filter__radio-button:checked ~ .task-filter__text {
+
+.task-filter__radio-button:checked + .task-filter__text {
     border: 1px solid var(--filter_radio-button-border-color);
+}
+
+.task-filter__radio-button:focus + .task-filter__text {
+    border: 1px solid var(--focus-border-color);
 }
 
 .task_clear_completed {
