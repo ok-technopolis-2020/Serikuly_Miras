@@ -8,7 +8,7 @@
 .controls__select-all-button {
     height: 64px;
     width: 56px;
-    background-image: url(/img/select-all.svg);
+    background-image: url(./../img/select-all.svg);
     background-repeat: no-repeat;
     background-position: 15px 26px;
     background-color: transparent;

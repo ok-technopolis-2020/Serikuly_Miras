@@ -27,7 +27,7 @@
 .tasks-item__status:checked + .task-item__status-icon {
     background-position: 6px 8px;
     background-repeat: no-repeat;
-    background-image: url(/img/checked.svg);
+    background-image: url(./../img/checked.svg);
     border-color: var(--checked-icon-color);
 }
 
@@ -68,7 +68,7 @@
     height: 36px;
     margin: -9999px 4px 0 12px;
     text-indent: -9999px;
-    background-image: url(/img/cross.svg);
+    background-image: url(./../img/cross.svg);
     background-repeat: no-repeat;
     background-position: 50%;
 }
