@@ -1,0 +1,9 @@
+.task_clear_completed {
+    margin: 0;
+    border: 0;
+    padding: 8px 0;
+    background-color: transparent;
+    font-size: 14px;
+    color:var(--action-bar-text-color);
+    font-weight: 300;
+}
