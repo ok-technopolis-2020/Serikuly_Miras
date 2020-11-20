@@ -5,10 +5,14 @@
     overflow: hidden;
     box-sizing: border-box;
     align-items: center;
-}
 
-.tasks-item__view:hover {
-    background-color: var(--hover-background-color);
+    &:hover {
+        background-color: var(--hover-background-color);
+
+        .task-item__delete {
+            margin-top: 0;
+        }
+    }
 }
 
 .task-item__status-icon {
@@ -18,17 +22,6 @@
     box-sizing: border-box;
     border: 1px var(--border-color) solid;
     border-radius: 50%;
-}
-
-.tasks-item__status:focus + .task-item__status-icon {
-    border-color: var(--focus-border-color);
-}
-
-.tasks-item__status:checked + .task-item__status-icon {
-    background-position: 6px 8px;
-    background-repeat: no-repeat;
-    background-image: url(./../img/checked.svg);
-    border-color: var(--checked-icon-color);
 }
 
 .task-item__text {
@@ -48,6 +41,22 @@
     height: 36px;
     box-sizing: border-box;
     background-color: transparent;
+
+    &:focus {
+        + .task-item__status-icon {
+            border-color: var(--focus-border-color);
+        }
+    }
+    
+    &:checked { 
+        + .task-item__status-icon {
+            background-position: 6px 8px;
+            background-repeat: no-repeat;
+            background-image: url(./../img/checked.svg);
+            border-color: var(--checked-icon-color);
+        }
+    }
+    
 }
 
 .todo-app__action-bar {
@@ -71,9 +80,8 @@
     background-image: url(./../img/cross.svg);
     background-repeat: no-repeat;
     background-position: 50%;
-}
 
-.task-item__delete:focus,
-.tasks-item__view:hover .task-item__delete {
-    margin-top: 0;
+    &:focus {
+        margin-top: 0;
+    }
 }
