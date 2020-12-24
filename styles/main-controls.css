@@ -1,0 +1,43 @@
+.todo-app__controls {
+    display: flex;
+    height: 64px;
+    box-sizing: border-box;
+    border-bottom: 1px var(--border-color) solid;
+}
+
+.controls__select-all-button {
+    height: 64px;
+    width: 56px;
+    background-image: url(./../img/select-all.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 26px;
+    background-color: transparent;
+    border: 0 none;
+}
+
+.controls__select-all {
+    display: flex;
+    height: 64px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.controls__add-new {
+    display: flex;
+    height: 64px;
+    box-sizing: border-box;
+    color: var(--add-new-input-text-color);
+    flex-grow: 1;
+}
+
+.controls__add-new-input{
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    border: 0 none;
+    color: var(--add-new-input-text-color);
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    background-color: transparent;
+}

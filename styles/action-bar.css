@@ -1,0 +1,15 @@
+.todo-app__action-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px var(--border-color) solid;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 3px 12px;
+    font-size: 14px;
+    color: var(--action-bar-text-color);
+}
+
+.action-bar__item{
+    display: flex;
+}

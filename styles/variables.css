@@ -1,0 +1,13 @@
+:root {
+	--main-background-color: #f5f5f5;
+    --todo-app-frame-background-color: #ffffff;
+	--title-color: #cccccc;
+    --add-new-input-text-color: #cccccc;
+    --border-color: #E6E6E6;
+    --main-text-color: #666666;
+	--action-bar-text-color: #888888;
+    --filter_radio-button-border-color: #EBDFDF;
+    --hover-background-color: #fafafa;
+    --checked-icon-color: #5DC2AF;
+    --focus-border-color: #cccccc;
+}

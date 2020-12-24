@@ -1,0 +1,24 @@
+{
+  "name": "serikuly_miras",
+  "version": "1.0.0",
+  "description": "Serikuly Miras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ok-technopolis-2020/Serikuly_Miras.git"
+  },
+  "author": "Serikuly Miras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ok-technopolis-2020/Serikuly_Miras/issues"
+  },
+  "homepage": "https://github.com/ok-technopolis-2020/Serikuly_Miras#readme",
+  "devDependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "postcss-nested": "^4.2.3"
+  }
+}
